@@ -1,0 +1,67 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1660177524765' stop='1660177558885'>
+    <name>run the calculator</name>
+    <title>run the calculator</title>
+    <test-cases>
+        <test-case start='1660177524772' status='failed' stop='1660177558850'>
+            <name>Verify url</name>
+            <title>Verify url</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.81'/>
+            </parameters>
+            <steps>
+                <step start='1660177524818' status='passed' stop='1660177558838'>
+                    <name>GET /session/:sessionId/title</name>
+                    <title>GET /session/:sessionId/title</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='20699a07-16c7-43ce-b7f1-37a8751d72bd-attachment.png' type='image/png' size='299472'/>
+                    </attachments>
+                    <steps>
+                        <step start='1660177524850' status='passed' stop='1660177525076'>
+                            <name>POST /session/:sessionId/url</name>
+                            <title>POST /session/:sessionId/url</title>
+                            <attachments>
+                                <attachment title='Request' source='c3fbb9a0-1423-4bf3-8ec0-8fc1ae5d5c14-attachment.json' type='application/json' size='80'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                        <step start='1660177525327' status='passed' stop='1660177556937'>
+                            <name>GET /session/:sessionId/title</name>
+                            <title>GET /session/:sessionId/title</title>
+                            <attachments>
+                                <attachment title='Response' source='fae9c682-1a77-494c-8b20-13ed7b543c38-attachment.json' type='application/json' size='54'/>
+                            </attachments>
+                            <steps>
+                                <step start='1660177534931' status='passed' stop='1660177556813'>
+                                    <name>GET /session/:sessionId/screenshot</name>
+                                    <title>GET /session/:sessionId/screenshot</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Expect window to have title
+                
+                Expected: "securian Financial"
+                Received: ""</message>
+                <stack-trace>Error: Expect window to have title
+                
+                Expected: "securian Financial"
+                Received: ""
+                    at Context.&lt;anonymous> (C:\Users\Owner\Documents\Webdriver-io-Practice\test\specs\calculator.e2e.js:5:30)
+                    at Context.executeAsync (C:\Users\Owner\Documents\Webdriver-io-Practice\node_modules\@wdio\utils\build\shim.js:333:27)
+                    at Context.testFrameworkFnWrapper (C:\Users\Owner\Documents\Webdriver-io-Practice\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:51:32)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

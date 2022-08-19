@@ -1,0 +1,177 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1660230025975' stop='1660230031908'>
+    <name>run the calculator</name>
+    <title>run the calculator</title>
+    <test-cases>
+        <test-case start='1660230025976' status='passed' stop='1660230025991'>
+            <name>Verify url</name>
+            <title>Verify url</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.81'/>
+            </parameters>
+            <steps>
+                <step start='1660230025980' status='undefined'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='4f381fed-0859-4f18-b551-779d91e369bb-attachment.json' type='application/json' size='80'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1660230025993' status='passed' stop='1660230031379'>
+            <name>should set value for current age element</name>
+            <title>should set value for current age element</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.81'/>
+            </parameters>
+            <steps>
+                <step start='1660230026000' status='passed' stop='1660230030450'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='0d695fbc-1526-4462-b2b0-f6a22b96179b-attachment.json' type='application/json' size='56'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1660230030545' status='passed' stop='1660230031194'>
+                    <name>POST /session/:sessionId/element/f7ae4957-feda-4a70-b8f3-4f2f9ae752a7/clear</name>
+                    <title>POST /session/:sessionId/element/f7ae4957-feda-4a70-b8f3-4f2f9ae752a7/clear</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1660230031199' status='passed' stop='1660230031365'>
+                    <name>POST /session/:sessionId/element/f7ae4957-feda-4a70-b8f3-4f2f9ae752a7/value</name>
+                    <title>POST /session/:sessionId/element/f7ae4957-feda-4a70-b8f3-4f2f9ae752a7/value</title>
+                    <attachments>
+                        <attachment title='Request' source='e609061c-2434-4179-a8dd-a11363b5bddf-attachment.json' type='application/json' size='18'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1660230031366' status='passed' stop='1660230031378'>
+                    <name>GET /session/:sessionId/element/f7ae4957-feda-4a70-b8f3-4f2f9ae752a7/property/value</name>
+                    <title>GET /session/:sessionId/element/f7ae4957-feda-4a70-b8f3-4f2f9ae752a7/property/value</title>
+                    <attachments>
+                        <attachment title='Response' source='2b62765e-f530-42d2-94c3-bbac4521eada-attachment.json' type='application/json' size='4'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Response' source='ebcdb75d-ee46-4d89-aec5-90c7de1bbccb-attachment.json' type='application/json' size='83'/>
+            </attachments>
+        </test-case>
+        <test-case start='1660230031380' status='passed' stop='1660230031422'>
+            <name>should get value for current age element</name>
+            <title>should get value for current age element</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.81'/>
+            </parameters>
+            <steps>
+                <step start='1660230031382' status='passed' stop='1660230031405'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='4c5fc99d-7995-4169-89f6-ae6e30efa3da-attachment.json' type='application/json' size='56'/>
+                        <attachment title='Response' source='93aab1ff-538d-41e8-8847-e0de88b3ff5a-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1660230031411' status='passed' stop='1660230031421'>
+                    <name>GET /session/:sessionId/element/f7ae4957-feda-4a70-b8f3-4f2f9ae752a7/property/value</name>
+                    <title>GET /session/:sessionId/element/f7ae4957-feda-4a70-b8f3-4f2f9ae752a7/property/value</title>
+                    <attachments>
+                        <attachment title='Response' source='6973f98d-785b-48d6-9aa8-0733df13f6bf-attachment.json' type='application/json' size='4'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1660230031422' status='broken' stop='1660230031564'>
+            <name>should set value for what age do you plan to retire element</name>
+            <title>should set value for what age do you plan to retire element</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.81'/>
+            </parameters>
+            <steps>
+                <step start='1660230031431' status='passed' stop='1660230031563'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='b56b55eb-a795-4533-aaf0-de06c48caff2-attachment.png' type='image/png' size='62333'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>clear is not defined</message>
+                <stack-trace>ReferenceError: clear is not defined
+                    at Context.&lt;anonymous> (C:\Users\Owner\Documents\Webdriver-io-Practice\test\specs\calculator.e2e.js:24:80)
+                    at Context.executeAsync (C:\Users\Owner\Documents\Webdriver-io-Practice\node_modules\@wdio\utils\build\shim.js:333:27)
+                    at Context.testFrameworkFnWrapper (C:\Users\Owner\Documents\Webdriver-io-Practice\node_modules\@wdio\utils\build\test-framework\testFnWrapper.js:51:32)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1660230031565' status='broken' stop='1660230031906'>
+            <name>should get value for what age do you plan to retire element</name>
+            <title>should get value for what age do you plan to retire element</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-104.0.5112.81'/>
+            </parameters>
+            <steps>
+                <step start='1660230031566' status='passed' stop='1660230031711'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='387067b2-bbeb-469d-9076-35e81e96b832-attachment.json' type='application/json' size='58'/>
+                        <attachment title='Response' source='dd4bee99-1689-4539-928c-1a529f440956-attachment.json' type='application/json' size='1028'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1660230031716' status='passed' stop='1660230031905'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='ac1ac3b3-48a6-4933-b7f3-235a906f6cda-attachment.png' type='image/png' size='62333'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>retirementage is not defined</message>
+                <stack-trace>ReferenceError: retirementage is not defined
+                    at Context.&lt;anonymous> (C:\Users\Owner\Documents\Webdriver-io-Practice\test\specs\calculator.e2e.js:31:5)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
